@@ -1,0 +1,23 @@
+<!-- 
+DEMO JsFormValidator.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jsFormValidator Demo</title>
+	<meta charset="UTF-8">
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="jsFormValidator.js"></script>
+</head>
+<body>
+	<div id="loginSection">
+		<input type="text" name="email" placeholder="Email"/>
+		<input type="text" name="username" placeholder="Username"/>
+		<input type="password" name="password" placeholder="Password">
+	</div>
+	<script>
+		var jfv = jsFormValidator.App.create();
+		jfv.Validator.applyRules('Login');
+	</script>
+</body>
+</html>

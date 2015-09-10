@@ -1,0 +1,17 @@
+{
+	"email": {
+		"validEmail":true,
+		"required":true
+	},
+
+	"username": {
+		"minLength":5,
+		"maxLength":15
+	},
+
+	"password": {
+		"validPassword":true,
+		"match": "password",
+		"required":true
+	}
+}

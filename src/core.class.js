@@ -187,7 +187,7 @@ replace(/(?:^|:|,)(?:\s*\[)+/g, ''))) {
 	 */
 	var getJsonFile = function(jsonFilePath, fn) {
 		$.getJSON(jsonFilePath, function(jsonObject) {
-			CoreClass.printer('[Status] - JSON loaded: ' + jsonFilePath, CoreClass.green);
+			CoreClass.printer('[Status] - JSON loaded: ' + jsonFilePath, CoreClass.pink);
 			fn.Apply(jsonObject);
 		})
 		.done(function() {
