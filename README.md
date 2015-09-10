@@ -16,6 +16,17 @@ Validate any HTML form in 3 deadly simple steps:
 ### 2) Let's say for instance we want to validate a basic login form. Create a 'Login' folder inside models/forms which also will contain rules.json.
 
 ```
+- myApp
+ -- models
+   --- forms
+      ---- Login
+       ----- rules.json
+- jquery.min.js
+- jsform.min.js
+- index.html
+```
+
+```
 {
 	"email": {
 		"validEmail":true,
