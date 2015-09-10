@@ -36,7 +36,7 @@ DEMO JsFormValidator.
 ### 2) Let's say for instance we want to validate a basic login form. Create a 'Login' folder inside models/forms which also will contain rules.json
 
 ```
-//Structre of your project using jsFormValidator
+//Structure of your project using jsFormValidator
 
 - myApp
  -- models
