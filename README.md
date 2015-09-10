@@ -53,3 +53,18 @@ jsFormValidator.App.create().Validator.applyRules('Login');
 ```
 
 That's All Folks!
+
+## Notes
+You need to keep the structures of the folder models/forms where the rules.json should be. It doesn't matter how you setup jsForm but the models folder should always be at the root of your application.
+
+### Rules
+
+- required: Make sure that the field is provided by the user.
+- match: Make sure that the field match exactly another one.
+- email: Validate an email address.
+- password: Check the strenght of the password.
+- minlength: A field is limited to x minimum of characters.
+- maxLength: A field is limited to z maximum of characters
+
+@TODO: Add more validator
+@TODO: Add testing
