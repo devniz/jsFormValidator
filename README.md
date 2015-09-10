@@ -66,5 +66,5 @@ You need to keep the structures of the folder models/forms where the rules.json 
 - minlength: A field is limited to x minimum of characters.
 - maxLength: A field is limited to z maximum of characters
 
-@TODO: Add more validator
-@TODO: Add testing
+- @TODO: Add more validator
+- @TODO: Add testing
