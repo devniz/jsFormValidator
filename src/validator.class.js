@@ -7,7 +7,7 @@
 var ValidatorClass= (function() {
 	"use strict";
 
-	var ruleRoot = 'http://localhost:8888/jsFormValidator/models/forms/';
+	var ruleRoot = 'models/forms/';
 
 	var required = function(fieldName) {
 		var fieldValue = FormClass.getValueByName(fieldName);
@@ -22,7 +22,7 @@ var ValidatorClass= (function() {
 	};
 
 	/**
-	 * @function emailInput
+	 * @function email
 	 * @summary validate a given email address.
 	 * @access public
 	 * @param {string} email Address email to validate.
