@@ -55,7 +55,7 @@ jsFormValidator.App.create().Validator.applyRules('Login');
 That's All Folks!
 
 ## Notes
-You need to keep the structures of the folder models/forms where the rules.json should be. It doesn't matter how you setup jsForm but the models folder should always be at the root of your application.
+You need to keep the structures of the folder models/forms where the rules.json should be. It doesn't matter how you setup jsForm and where you use it as it is a global object, but the models folder should always be at the root of your application. The JSON file 'rules.json' must be valid in each of your form validation folder (Login) and must keep the same name i.e rules.json.
 
 ### Rules
 
