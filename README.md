@@ -50,13 +50,13 @@ Validate any HTML form in 3 deadly simple steps:
 ### 3) Validate your form with one single line of code and check what's happen in your browser console!
 
 ```
-jsFormValidator.App.create().Validator.applyRules('Login');
+jsFormValidator.App.create().Validator.applyRules('Login'); //Magic! make sure that the parameter is equal to the folder created into models/forms
 ```
 
 That's All Folks!
 
 ## Notes
-You need to keep the structures of the folder models/forms where the rules.json should be. It doesn't matter how you setup jsForm and where you use it as it is a global object, but the models folder should always be at the root of your application. The JSON file 'rules.json' must be valid in each of your form validation folder (Login) and must keep the same name i.e rules.json.
+You need to keep the structures of the folder models/forms where the rules.json should be. It doesn't matter how you setup jsForm and where you use it as it is a global object, but the models folder should always be at the root of your application. The JSON file 'rules.json' must be valid in each of your form validation folder (Login or whatever other name) and must keep the same name i.e rules.json.
 
 ### Rules
 
