@@ -8,7 +8,6 @@ var FormClass= (function() {
 	"use strict";
 
 	var Core = CoreClass;
-	var Events = EventClass;
 
 	var addTextInput = function(target, name, placeholder) {
 		var textElement = '<div id="oloc-text-' + name + '"><input type="' + 'text" name="' + name + '" placeholder="' + placeholder + '"/></div>';

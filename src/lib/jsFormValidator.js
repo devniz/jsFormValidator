@@ -225,73 +225,6 @@ replace(/(?:^|:|,)(?:\s*\[)+/g, ''))) {
 module.exports = CoreClass;
 },{}],2:[function(require,module,exports){
 /**
- * @module Event
- * @version 1.0
- * @author Nizar Bousebsi
- */
-
-var EventClass = (function() {
-	"use strict";
-
-	/**
-	 * @function addButtonClick
-	 * @summary Assign a click event to any button.
-	 * @access public
-	 * @event addButtonClick
-	 * @fires Event#action
-	 * @param {string} target DIV id/name of the button.
-	 * @param {function} action Function to call when the click is fired
-	 * @example myApp.Event.addButtonClick("#send", myApp.Validation);
-	 */
-	var addButtonClick = function(target, action) {
-		var buttonName = FormClass.getAnyAttribute(target, 'name');
-		var buttonElement = $('input[name^=' + buttonName + ']');
-		buttonElement.click(function() {
-			CoreClass.printer('[Event] - Action ' + action + ' triggered.', CoreClass.blue);
-		});
-	};
-
-	/**
-	 * @function addOnChange
-	 * @summary Assign an OnChange event for any input field.
-	 * @access public
-	 * @event addOnChange
-	 * @fires Event#action
-	 * @param {string} target DIV id/name of the input field.
-	 * @param {function} action Function to call when the onchange event occur
-	 * @example myApp.Event.addOnChange"#username", myApp.Storage);
-	 */
-	var addOnChange = function(target, action) {
-		var elementName = FormClass.getAnyAttribute(target, 'name');
-		var element = 'input[name=' + elementName + ']';
-		$(element).on('keyup change', function () {
-			console.log(action);
-		});
-	};
-
-	/**
-	 * @function addOnFocus
-	 * @summary Assign the OnFocus event for any input field.
-	 * @access public
-	 * @event addOnFocus
-	 * @fires Event#action
-	 * @param {string} id DIV id of the input field.
-	 * @param {function} action Function to call when the onfocus occur
-	 * @example myApp.Event.addOnFocus("#password", myApp.Validation);
-	 */
-	var addOnFocus = function(id, action) {
-	};
-
-	return {
-		addButtonClick: addButtonClick,
-		addOnChange: addOnChange,
-		addOnFocus: addOnFocus
-	};
-})();
-
-module.exports = EventClass;
-},{}],3:[function(require,module,exports){
-/**
  * @module Form
  * @version 1.0
  * @author Nizar Bousebsi
@@ -301,7 +234,6 @@ var FormClass= (function() {
 	"use strict";
 
 	var Core = CoreClass;
-	var Events = EventClass;
 
 	var addTextInput = function(target, name, placeholder) {
 		var textElement = '<div id="oloc-text-' + name + '"><input type="' + 'text" name="' + name + '" placeholder="' + placeholder + '"/></div>';
@@ -449,7 +381,7 @@ var FormClass= (function() {
 })();
 
 module.exports = FormClass;
-},{}],4:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 /**
  * @module jsFormValidator
  * @version 1.0
@@ -473,7 +405,6 @@ var jsForm = {
 
 			return {
 				Core       : CoreClass,
-				Event      : EventClass,
 				Forms      : FormClass,
 				Validator  : ValidatorClass
 			};
@@ -482,13 +413,12 @@ var jsForm = {
 
 }
 module.exports = jsForm;
-},{}],5:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 jsFormValidator = require('../../src/jsFormValidator.class.js');
 CoreClass 	   	= require('../../src/core.class.js');
-EventClass 	   	= require('../../src/event.class.js');
 FormClass	   	= require('../../src/form.class.js');
 ValidatorClass	= require('../../src/validator.class.js');
-},{"../../src/core.class.js":1,"../../src/event.class.js":2,"../../src/form.class.js":3,"../../src/jsFormValidator.class.js":4,"../../src/validator.class.js":6}],6:[function(require,module,exports){
+},{"../../src/core.class.js":1,"../../src/form.class.js":2,"../../src/jsFormValidator.class.js":3,"../../src/validator.class.js":5}],5:[function(require,module,exports){
 /**
  * @module Validator
  * @version 1.0
@@ -651,4 +581,4 @@ var ValidatorClass= (function() {
 })();
 
 module.exports = ValidatorClass;
-},{}]},{},[5]);
+},{}]},{},[4]);

@@ -21,7 +21,6 @@ var jsForm = {
 
 			return {
 				Core       : CoreClass,
-				Event      : EventClass,
 				Forms      : FormClass,
 				Validator  : ValidatorClass
 			};
