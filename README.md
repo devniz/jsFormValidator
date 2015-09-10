@@ -16,6 +16,8 @@ Validate any HTML form in 3 deadly simple steps:
 ### 2) Let's say for instance we want to validate a basic login form. Create a 'Login' folder inside models/forms which also will contain rules.json
 
 ```
+//Structre of your project using jsFormValidator
+
 - myApp
  -- models
    --- forms
@@ -50,7 +52,7 @@ Validate any HTML form in 3 deadly simple steps:
 ### 3) Validate your form with one single line of code and check what's happen in your browser console!
 
 ```
-jsFormValidator.App.create().Validator.applyRules('Login'); //Magic! make sure that the parameter is equal to the folder created into models/forms
+jsFormValidator.App.create().Validator.applyRules('Login'); //Magic! make sure that the parameter of applyRules(pathToRulesJson), is equal to the folder created into models/forms (Login in that example)
 ```
 
 That's All Folks!
