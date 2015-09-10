@@ -13,7 +13,7 @@ Validate any HTLM form in 3 deadly simple steps:
 <script src="jsform.js"></script>
 ```
 
-2) Let's say for instance we want to validate a basic login form. Create a 'Login' folder inside models/forms which also will contain rules.json.
+### 2) Let's say for instance we want to validate a basic login form. Create a 'Login' folder inside models/forms which also will contain rules.json.
 
 ```
 {
@@ -35,7 +35,7 @@ Validate any HTLM form in 3 deadly simple steps:
 }
 ```
 
-3) Validate your form with one single line of code and check what's happen in your browser console!
+### 3) Validate your form with one single line of code and check what's happen in your browser console!
 
 ```
 jsFormValidator.App.create().Validator.applyRules('Login');
