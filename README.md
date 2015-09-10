@@ -9,8 +9,28 @@ Validate any HTML form in 3 deadly simple steps:
 - minified version: [jsFormValidator - minified] (https://github.com/Devniz/jsFormValidator/blob/master/src/lib/jsform.min.js)
 
 ```
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="jsform.js"></script>
+<!-- 
+DEMO JsFormValidator.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jsFormValidator Demo</title>
+	<meta charset="UTF-8">
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="jsform.js"></script>
+</head>
+<body>
+	<div id="loginSection">
+		<input type="text" name="email" placeholder="Email"/>
+		<input type="text" name="username" placeholder="Username"/>
+		<input type="password" name="password" placeholder="Password">
+	</div>
+	<script>
+		jsFormValidator.App.create().Validator.applyRules('Login');
+	</script>
+</body>
+</html>
 ```
 
 ### 2) Let's say for instance we want to validate a basic login form. Create a 'Login' folder inside models/forms which also will contain rules.json
