@@ -1,0 +1,12 @@
+{
+	"email": {
+		"validEmail":true,
+		"required":true
+	},
+
+	"password": {
+		"validPassword":true,
+		"match": "password",
+		"required":true
+	}
+}
