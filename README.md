@@ -50,6 +50,7 @@ DEMO JsFormValidator.
 
 ```
 //rules.json file containing a simple JSON object describing your validation rules.
+
 {
 	"email": {
 		"validEmail":true,
