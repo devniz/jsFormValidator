@@ -1,7 +1,7 @@
 # jsFormValidator
 jsFormValidator is a modern JavaScript Form validator
 
-Validate any HTLM form in 3 deadly simple steps:
+Validate any HTML form in 3 deadly simple steps:
 
 ### 1) Download and add into your index.html jQuery and jsFormValidator:
 
